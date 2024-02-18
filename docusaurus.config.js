@@ -1,14 +1,16 @@
-// @ts-check
+// @ts-nocheck
 // Note: type annotations allow type checking and IDEs autocompletion
 
+// @ts-ignore
 const lightCodeTheme = require('prism-react-renderer/themes/github');
+// @ts-ignore
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Documentación Chat Buho',
   tagline: 'Guia oficial completa y definitiva de Chat Buho',
-  favicon: 'img/favicon.ico',
+  favicon: 'https://upload.wikimedia.org/wikipedia/commons/f/f0/Senati_Per%C3%BA_logo.svg',
 
   // Set the production url of your site here
   url: 'https://documentacion.chat.buho.la',
@@ -44,12 +46,14 @@ const config = {
         },
         // blog: false,
         theme: {
+          // @ts-ignore
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
   ],
   plugins: [
+    // @ts-ignore
     require.resolve("@cmfcmf/docusaurus-search-local"),
     'plugin-image-zoom',
   ],
@@ -63,7 +67,7 @@ const config = {
         title: '',
         logo: {
           alt: 'Documentación de Chat Buho',
-          src: 'https://buho.la/images/chat/chat-buho.svg',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/f/f0/Senati_Per%C3%BA_logo.svg',
         },
         items: [
           // {
@@ -131,6 +135,7 @@ const config = {
         additionalLanguages: ['php'],
       },
       theme: {
+        // @ts-ignore
         customCss: require.resolve('./src/css/custom.css'),
       },
       imageZoom: {
